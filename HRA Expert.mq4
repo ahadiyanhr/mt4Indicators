@@ -35,7 +35,7 @@ int OnInit()
 //---
    //--- Texts:
   ObjectCreate("Roles1", OBJ_LABEL ,0, 0, 10);
-     ObjectSetText("Roles1","SD  >  CHOCH  >  %%  >  CP  >  FO the LQ",10, "Calibri Bold", clrMidnightBlue); 
+     ObjectSetText("Roles1","SD  >  CHOCH  >  LQ  >  CP  >  LQBAR",10, "Calibri Bold", clrMidnightBlue); 
      ObjectSet("Roles1",OBJPROP_CORNER,CORNER_RIGHT_UPPER);
      ObjectSetInteger(0,"Roles1",OBJPROP_XDISTANCE,110);
      ObjectSetInteger(0,"Roles1",OBJPROP_YDISTANCE,0);
@@ -136,14 +136,14 @@ int OnInit()
          
       ObjectCreate(0,"Buy/Sell",OBJ_BUTTON,0,0,0);
          ObjectSetInteger(0,"Buy/Sell",OBJPROP_CORNER,3);
-         ObjectSetInteger(0,"Buy/Sell",OBJPROP_XDISTANCE,75);
-         ObjectSetInteger(0,"Buy/Sell",OBJPROP_XSIZE,70);
+         ObjectSetInteger(0,"Buy/Sell",OBJPROP_XDISTANCE,35);
+         ObjectSetInteger(0,"Buy/Sell",OBJPROP_XSIZE,30);
          ObjectSetInteger(0,"Buy/Sell",OBJPROP_YDISTANCE,30);
          ObjectSetInteger(0,"Buy/Sell",OBJPROP_YSIZE,20);
          ObjectSetInteger(0,"Buy/Sell",OBJPROP_COLOR,clrBlack);
          ObjectSetInteger(0,"Buy/Sell",OBJPROP_BGCOLOR,clrSilver);
          ObjectSetInteger(0,"Buy/Sell",OBJPROP_STATE,false);
-         ObjectSetString(0,"Buy/Sell",OBJPROP_TEXT, "Buy/Sell");
+         ObjectSetString(0,"Buy/Sell",OBJPROP_TEXT, "B/S");
 
 
          
