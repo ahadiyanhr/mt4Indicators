@@ -35,7 +35,7 @@ int OnInit()
 //---
    //--- Texts:
   ObjectCreate("Roles1", OBJ_LABEL ,0, 0, 10);
-     ObjectSetText("Roles1","SD  >  CHOCH  >  LQ  >  CP  >  LQBAR",10, "Calibri Bold", clrMidnightBlue); 
+     ObjectSetText("Roles1","storngSD with CHOCH S/D  >  LQ  >  CP  >  LQBAR",10, "Calibri Bold", clrMidnightBlue); 
      ObjectSet("Roles1",OBJPROP_CORNER,CORNER_RIGHT_UPPER);
      ObjectSetInteger(0,"Roles1",OBJPROP_XDISTANCE,110);
      ObjectSetInteger(0,"Roles1",OBJPROP_YDISTANCE,0);
@@ -102,19 +102,10 @@ int OnInit()
          ObjectSet("Risk", OBJPROP_SELECTABLE, false);
          ObjectSet("Risk", OBJPROP_HIDDEN, true);
 
-//--- Steps LotSize Calculation:      
-      ObjectCreate("LotSize", OBJ_LABEL ,0, 0, 10);
-         ObjectSet("LotSize",OBJPROP_CORNER,CORNER_LEFT_UPPER);
-         ObjectSetInteger(0,"LotSize",OBJPROP_XDISTANCE,340);
-         ObjectSetInteger(0,"LotSize",OBJPROP_YDISTANCE,2);
-         ObjectSet("LotSize", OBJPROP_BACK, False);
-         ObjectSet("LotSize", OBJPROP_READONLY, true);
-         ObjectSet("LotSize", OBJPROP_SELECTABLE, false);
-         ObjectSet("LotSize", OBJPROP_HIDDEN, true);
-         
+//--- Steps LotSize Calculation:       
       ObjectCreate("LotsNum", OBJ_LABEL ,0, 0, 10);
          ObjectSet("LotsNum",OBJPROP_CORNER,CORNER_LEFT_UPPER);
-         ObjectSetInteger(0,"LotsNum",OBJPROP_XDISTANCE,480);
+         ObjectSetInteger(0,"LotsNum",OBJPROP_XDISTANCE,340);
          ObjectSetInteger(0,"LotsNum",OBJPROP_YDISTANCE,2);
          ObjectSet("LotsNum", OBJPROP_BACK, False);
          ObjectSet("LotsNum", OBJPROP_READONLY, true);
@@ -226,8 +217,6 @@ void OnTick()
          {
          TicksVal = TicksVal*100;
          }
-      ObjectSetText("LotSize","minLOT: "+IntegerToString((((RiskPercent/100)*(OutCap+AccountBalance()))/(TicksVal*0.01)))+" pips",8, "Calibri Bold", clrDarkBlue);
-      
       TicksValFlag = 1;
       }
 
