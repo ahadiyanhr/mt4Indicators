@@ -35,7 +35,7 @@ int OnInit()
 //---
    //--- Texts:
   ObjectCreate("Roles1", OBJ_LABEL ,0, 0, 10);
-     ObjectSetText("Roles1","storngSD with CHOCH S/D  >  LQ  >  CP  >  LQBAR",10, "Calibri Bold", clrMidnightBlue); 
+     ObjectSetText("Roles1","storngSD with CHOCH another SD  >  LQ  >  CP  >  LQBAR",10, "Calibri Bold", clrMidnightBlue); 
      ObjectSet("Roles1",OBJPROP_CORNER,CORNER_RIGHT_UPPER);
      ObjectSetInteger(0,"Roles1",OBJPROP_XDISTANCE,110);
      ObjectSetInteger(0,"Roles1",OBJPROP_YDISTANCE,0);
@@ -44,7 +44,7 @@ int OnInit()
      ObjectSet("Roles1", OBJPROP_SELECTABLE, false);
      ObjectSet("Roles1", OBJPROP_HIDDEN, true);
    ObjectCreate("Roles2", OBJ_LABEL ,0, 0, 10);
-     ObjectSetText("Roles2","Ignore first-back  >  Free-risk  >  tp on %% or SD",10, "Calibri Bold", clrMidnightBlue); 
+     ObjectSetText("Roles2","Ignore FirstBack in Mid-Time  >  Free-risk  >  tp on %% or SD",10, "Calibri Bold", clrMidnightBlue); 
      ObjectSet("Roles2",OBJPROP_CORNER,CORNER_RIGHT_UPPER);
      ObjectSetInteger(0,"Roles2",OBJPROP_XDISTANCE,110);
      ObjectSetInteger(0,"Roles2",OBJPROP_YDISTANCE,10);
