@@ -227,7 +227,7 @@ void OnTick()
       }
    else if ((ObjectGet(SLObj, OBJPROP_PRICE1) < Ask) && (TicksValFlag == 1))
       {
-      lots = NormalizeDouble((((((RiskPercent/100)*(OutCap+AccountBalance()))/(TicksVal)))/((Ask - ObjectGet(SLObj, OBJPROP_PRICE1))*multiplier*10)),2);
+      lots = NormalizeDouble((((((RiskPercent/100)*(OutCap+AccountBalance()))/(TicksVal)))/((Ask - ObjectGet(SLObj, OBJPROP_PRICE1))*multiplier*10)),2)-0.01;
       ObjectSetText("LotsNum", "Buy_Lot: "+lots,8, "Calibri Bold", clrDarkBlue);
       }
      
